@@ -9,6 +9,7 @@ pipeline {
                 anyOf {
                     changeset 'Gemfile'
                     changeset 'Dockerfile.base'
+                    changeset 'Jenkinsfile'
                 }
             }
             steps {
