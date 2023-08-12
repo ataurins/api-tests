@@ -7,8 +7,8 @@ pipeline {
         stage('docker-build-test-base') {
             when {
                 anyOf {
-                    changeSet 'Gemfile'
-                    changeSet 'Dockerfile.base'
+                    changeset 'Gemfile'
+                    changeset 'Dockerfile.base'
                 }
             }
             steps {
